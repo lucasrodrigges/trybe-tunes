@@ -22,7 +22,7 @@ class App extends Component {
       <Switch>
         <Route
           exact
-          path="/"
+          path="/trybe-tunes/"
           component={ (props) => (
             <Login
               { ...props }
