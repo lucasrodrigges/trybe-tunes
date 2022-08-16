@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Login from './pages/Login';
-import Loading from './components/Loading';
 import Album from './pages/Album';
 import Favorites from './pages/Favorites';
 import NotFound from './pages/NotFound';
@@ -28,16 +27,19 @@ class App extends Component {
               { ...props }
             />) }
         />
-        <Route exact path="/search" component={ Search } />
-        <Route exact path="/album/:id" component={ (props) => <Album { ...props } /> } />
-        <Route exact path="/favorites" component={ Favorites } />
-        <Route exact path="/profile" component={ Profile } />
+        <Route exact path="/trybe-tunes/search" component={ Search } />
         <Route
           exact
-          path="/profile/edit"
+          path="/trybe-tunes/album/:id"
+          component={ (props) => <Album { ...props } /> }
+        />
+        <Route exact path="/trybe-tunes/favorites" component={ Favorites } />
+        <Route exact path="/trybe-tunes/profile" component={ Profile } />
+        <Route
+          exact
+          path="/trybe-tunes/profile/edit"
           component={ (props) => <ProfileEdit { ...props } /> }
         />
-        <Route exact path="/loading" component={ Loading } />
         <Route path="/:id" component={ NotFound } />
       </Switch>
     );

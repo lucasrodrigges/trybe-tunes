@@ -5,7 +5,7 @@ class ButtonProfile extends Component {
   render() {
     return (
       <button className="button is-link btn-profile" type="button">
-        <Link className="link-profile" to="/profile/edit">
+        <Link className="link-profile" to="/trybe-tunes/profile/edit">
           <p className="txt-btn">Editar perfil</p>
         </Link>
       </button>
