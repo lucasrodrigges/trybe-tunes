@@ -34,28 +34,6 @@ class Album extends Component {
     return (
       <div data-testid="page-album">
         <Header />
-        {/* <div className="form-search-div">
-          <form action="" className="form">
-            <input
-              className="input is-rounded form-search-item input-search"
-              id="inputSearch"
-              type="text"
-              placeholder="Nome do Artista"
-              data-testid="search-artist-input"
-              // onChange={ this.onInputChange }
-            />
-            <button
-              className="button is-rounded form-search-item btn-search "
-              type="button"
-              id="btnSearch"
-              data-testid="search-artist-button"
-              // disabled={ disableSearchBtn }
-              // onClick={ this.onClickSearchBtn }
-            >
-              Pesquisar
-            </button>
-          </form>
-        </div> */}
         <div className="titles-container">
           <h2
             className="artist-name"
