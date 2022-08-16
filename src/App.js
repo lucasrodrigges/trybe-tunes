@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Login from './pages/Login';
+import Loading from './components/Loading';
 import Album from './pages/Album';
 import Favorites from './pages/Favorites';
 import NotFound from './pages/NotFound';
@@ -40,7 +41,8 @@ class App extends Component {
           path="/trybe-tunes/profile/edit"
           component={ (props) => <ProfileEdit { ...props } /> }
         />
-        <Route path="/:id" component={ NotFound } />
+        <Route exact path="/trybe-tunes/loading" component={ Loading } />
+        <Route path="/trybe-tunes/:id" component={ NotFound } />
       </Switch>
     );
   }
