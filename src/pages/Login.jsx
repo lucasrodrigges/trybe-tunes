@@ -28,9 +28,9 @@ class Login extends Component {
 
   onSaveBtnClick = async (user) => {
     const { history } = this.props;
-    history.push('/loading');
+    history.push('/trybe-tunes/loading');
     await createUser({ name: user });
-    history.push('/search');
+    history.push('/trybe-tunes/search');
   }
 
   render() {
