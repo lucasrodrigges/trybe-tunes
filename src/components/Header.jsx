@@ -36,21 +36,21 @@ class Header extends Component {
             <div className="navbar-start">
               <Link
                 className="navbar-item"
-                to="/trybe-tunes/search"
+                to="/search"
                 data-testid="link-to-search"
               >
                 Pesquisar
               </Link>
               <Link
                 className="navbar-item"
-                to="/trybe-tunes/favorites"
+                to="/favorites"
                 data-testid="link-to-favorites"
               >
                 Favoritas
               </Link>
               <Link
                 className="navbar-item"
-                to="/trybe-tunes/profile"
+                to="/profile"
                 data-testid="link-to-profile"
               >
                 Perfil

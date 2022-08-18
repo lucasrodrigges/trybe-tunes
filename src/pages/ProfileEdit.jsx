@@ -55,7 +55,7 @@ class ProfileEdit extends Component {
     const { image, name, email, description } = this.state;
     await updateUser({ name, email, image, description });
     const { history } = this.props;
-    history.push('/trybe-tunes/profile');
+    history.push('/profile');
   }
 
   render() {

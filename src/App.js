@@ -22,27 +22,27 @@ class App extends Component {
       <Switch>
         <Route
           exact
-          path="/trybe-tunes/"
+          path="/"
           component={ (props) => (
             <Login
               { ...props }
             />) }
         />
-        <Route exact path="/trybe-tunes/search" component={ Search } />
+        <Route exact path="/search" component={ Search } />
         <Route
           exact
-          path="/trybe-tunes/album/:id"
+          path="/album/:id"
           component={ (props) => <Album { ...props } /> }
         />
-        <Route exact path="/trybe-tunes/favorites" component={ Favorites } />
-        <Route exact path="/trybe-tunes/profile" component={ Profile } />
+        <Route exact path="/favorites" component={ Favorites } />
+        <Route exact path="/profile" component={ Profile } />
         <Route
           exact
-          path="/trybe-tunes/profile/edit"
+          path="/profile/edit"
           component={ (props) => <ProfileEdit { ...props } /> }
         />
-        <Route exact path="/trybe-tunes/loading" component={ Loading } />
-        <Route path="/trybe-tunes/:id" component={ NotFound } />
+        <Route exact path="/loading" component={ Loading } />
+        <Route path="/:id" component={ NotFound } />
       </Switch>
     );
   }
