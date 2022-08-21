@@ -18,7 +18,7 @@ class Albuns extends Component {
                   alt={ collectionName }
                 />
                 <Link
-                  to={ `/tybe-tunes/album/${collectionId}` }
+                  to={ `/album/${collectionId}` }
                   id={ collectionId }
                   className="link-album-search"
                   data-testid={ `link-to-album-${collectionId}` }
