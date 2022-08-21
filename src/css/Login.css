@@ -36,7 +36,8 @@ html {
   /* justify-content: flex-end; */
   height: 50vh;
   width: 40%;
-  background-color: rgb(209, 166, 110);;
+  background-color: rgb(209, 166, 110);
+  ;
   border-radius: 30px;
   font-family: 'Sen', sans-serif;
   /* color: white; */
@@ -45,7 +46,8 @@ html {
 .form-div:hover {
   transition: 700ms;
   /* opacity: 1; */
-  background-color: rgb(214, 177, 128);;
+  background-color: rgb(214, 177, 128);
+  ;
 }
 
 .title-input-login {
@@ -57,4 +59,18 @@ html {
   width: 100%;
 }
 
+@media (max-width: 1024px) {
+  .form-div {
+    width: 80%;
+  }
+}
 
+@media screen and (max-width: 600px) {
+  .form-div {
+    height: 40vh;
+  }
+
+  .field {
+    width: 70%;
+  }
+}
